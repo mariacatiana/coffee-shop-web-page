@@ -30,11 +30,26 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
+    margin: 0;
+    padding-top: 10rem;
     background: black;
 }
 
 section{
-    padding:2rem 7%;
+    padding: 1rem 7%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    font-weight: 400;
+    line-height: 1.4; 
+    letter-spacing: 0px;
+}
+
+.heading span{
+    color:var(--main-color);
 }
 
 .btn{
@@ -45,7 +60,7 @@ section{
     gap: 1rem;
     position: static;
     bottom: 47px;
-    border-radius: 1rem;
+    border-radius: 16px;
     background-color: var(--main-color);    
     color: white;    
     cursor: pointer;
@@ -54,8 +69,8 @@ section{
     margin-top: 5rem;
 }
 
-.btn :hover{
-    letter-spacing: 2rem;
+.btn:hover{
+    letter-spacing: 0.1rem;
 }
 
 .header{
@@ -63,7 +78,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:24px;
+    padding: 2rem 1rem;
     position: fixed;
     top:0; left: 0; right: 0;
     z-index: 1000;   
@@ -168,8 +183,7 @@ section{
     width: 35rem;
     background: white;
     padding:4rem;
-    border-radius: 1rem; 
-        
+    border-radius: 1rem;         
 }
 
 .header .cart-items-container.active{
@@ -222,11 +236,6 @@ section{
     background: url(../Images/01_hero_section.png) no-repeat;
     background-size: cover;
     background-position: center;
-
-}
-
-.home .content{
-    width: 100rem;
 }
 
 .home .content h3{
@@ -244,6 +253,228 @@ section{
     line-height: 1.4; 
     letter-spacing: 0px;       
 }
+
+
+.about {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+    background: url(../Images/02_about_us.png) no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;   
+    padding: 0 2rem;
+}
+
+.about .row .content{
+    flex:1 1 45rem;
+    padding:10rem;
+    text-align: center; 
+}
+
+.about .row .content .heading {
+    position: relative;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: white;
+    font-weight: 400;
+    line-height: 1.4; 
+    letter-spacing: 0px;
+    padding: 2rem;    
+}
+
+.about .row .content .horizontal-line {
+    width: 400px; 
+    height: 1px; 
+    background-color: white; 
+    margin: 0.5rem auto 2rem auto; 
+}
+
+.about .row .content p{
+    font-size: 2rem;
+    color: white;
+    line-height: 1.8; 
+    letter-spacing: 0px;
+    padding: 2rem;    
+}
+
+.about .row .content .button-container .btn {
+    display: inline-block;
+    color: var(--main-color);
+    border: 2px solid var(--main-color); 
+    background: transparent; 
+    text-decoration: none;
+    transition: var(--main-color);
+}
+
+.about .row .content .button-container .btn:hover {
+    background: var(--main-color);
+    color: white;
+}
+
+.menu {
+    margin-top: 10rem; 
+}
+
+.menu .horizontal-line {
+    width: 400px; 
+    height: 1px; 
+    background-color: white; 
+    margin: 0.5rem auto 2rem auto; 
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:5rem;
+    margin-top: 10rem;
+}
+
+.menu .box-container .box{
+    height:55rem;
+    border-radius: 2rem;
+    text-align: center;   
+    color: var(--main-color);
+    border: 2px solid var(--main-color); 
+    background: transparent; 
+    text-decoration: none;
+    transition: var(--main-color);    
+}
+
+.menu .box-container .box img{
+    width: 100%;
+    height: auto;
+    max-height: 300px; 
+    object-fit: cover;
+    margin-bottom: 16px; 
+    border-radius: 2rem;
+}
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover{
+    background:var(--main-color);
+}
+
+.menu .box-container .box:hover h3,
+.menu .box-container .box:hover .price{
+    color: black; 
+}
+
+.menu .box-container .box .btn{
+    color: white ;     
+    background: var(--action);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Products {
+    margin-top: 10rem; 
+}
+
+.Products .horizontal-line {
+    width: 400px; 
+    height: 1px; 
+    background-color: white; 
+    margin: 0.5rem auto 2rem auto; 
+}
+
+.Products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:5rem;
+    margin-top: 10rem;
+}
+
+.Products .box-container .box{
+    height:60rem;
+    border-radius: 2rem;
+    text-align: center;   
+    color: var(--main-color);
+    border: 2px solid var(--main-color); 
+    background: transparent; 
+    text-decoration: none;
+    transition: var(--main-color);    
+}
+
+.Products .box-container .box img{
+    padding: 2rem;;
+    width: 100%;
+    height: auto;
+    max-height: 300px; 
+    object-fit: cover;
+    margin-bottom: 16px; 
+    border-radius: 2rem;
+}
+
+.Products .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.Products .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+
+.Products .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.Products .box-container .box .btn{
+    color: white ;     
+    background: var(--action);
+}
+
+.Products .box-container .box:hover .btn {
+    background: var(--main-color);    
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -319,10 +550,16 @@ section{
         right: 2rem;
     }
 
+    body{
+        margin: 0;
+        padding-top: 1rem;      
+    }
+
     .home{
         background-position: left;
         justify-content: center;
         text-align: center;
+        
     }
 
     .home .content h3{
@@ -333,7 +570,56 @@ section{
         font-size: 1.5rem;
     }
 
+    .about{
+        align-items: flex-start;
+        margin-top: -8rem;         
+    }
+
+    .about .row {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .about .row .content {
+        padding: 2rem 1rem;
+    }
+
+    .about .row .content .heading {
+        font-size: 3rem;
+    }
+
+    .about .row .content h3 {
+        font-size: 2.5rem;
+    }
+
+    .about .row .content p {
+        font-size: 1.5rem;
+    }
+
+    .about .row .content .horizontal-line {
+        width: 100%;
+    }
+
+    .about .row .content .button-container {
+        justify-content: center;
+    }
+
+    .menu .horizontal-line {
+        width: 100%;
+    } 
+
+    .menu{
+        align-items: flex-start;
+        margin-top: -15rem;         
+    }
+    .menu .box-container .box{
+        height:60rem;
 }
+
+
+
+
+
 
 @media (max-width:450px){
 
