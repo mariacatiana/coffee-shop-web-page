@@ -85,8 +85,9 @@ section{
 }
 
 .header .logo img{
-    height: 12rem;
-    padding: 2rem;
+    height: 6rem; 
+    margin-right: auto; 
+    padding: 0; 
 }
 
 .header .navbar_1,
@@ -391,16 +392,12 @@ section{
     background: var(--action);
 }
 
-
-
-
-
-
-
-
-
-
-
+.menu .btn.see-more {
+    display: block;
+    margin: 8rem auto;    
+    text-align: center;    
+    width: fit-content;    
+}
 
 .Products {
     margin-top: 10rem; 
@@ -468,7 +465,252 @@ section{
     background: var(--main-color);    
 }
 
+.Products .btn.see-more {
+    display: block;
+    margin: 8rem auto;        
+    width: fit-content;    
+}
 
+.reservation{
+    background: #161B21;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.reservation .heading{
+    text-align: left
+}      
+
+.reservation .form-container{
+    display: grid;
+    grid-template-columns: 30 rem 30 rem;
+}
+
+.reservation .form-content{    
+    height: 40rem
+}
+
+.reservation .form-row{
+    display: flex;
+    width: 100rem;
+    height: 8rem;    
+}
+
+.reservation select, form input{
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 1rem;
+    text-align: center;   
+    color: var(--main-color);
+    border: 2px solid var(--main-color); 
+    background: transparent; 
+    text-decoration: none;
+    transition: var(--main-color);
+}
+
+.reservation .btn.see-more {
+    display: block;
+    margin: 8rem auto;    
+    width: fit-content;    
+}
+ 
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.review .horizontal-line {
+    width: 400px; 
+    height: 1px; 
+    background-color: white; 
+    margin: 0.5rem auto 2rem auto; 
+}
+
+.review .box-container .box{
+    margin-top: 2rem;
+    border:var(--border);
+    text-align: center;
+    padding:3rem 2rem;
+    color: #fff
+}
+
+.review .box-container .box p{
+    font-size: 2rem;
+    color: white;
+    font-weight: 400;
+    line-height: 8rem; 
+    letter-spacing: -0.25px; 
+}
+
+.review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .box-container .box .stars {    
+    color: #ff0; 
+}
+
+.review .box-container .box .name {
+    font-size: 2rem;
+    color: white;
+    font-weight: 400;
+    line-height: 8rem; 
+    letter-spacing: -0.25px; 
+}
+
+
+
+.contact .row{    
+    display: flex;    
+    gap: 5rem;    
+}
+
+.contact .horizontal-line {
+    width: 400px; 
+    height: 1px; 
+    background-color: white; 
+    margin: 0.5rem auto 2rem auto; 
+}
+
+.contact .row .map{
+    flex:1 1 45rem;
+    padding: 2rem;;
+    width: 100%;
+    height: auto;
+    max-height: 56rem; 
+    object-fit: cover;
+    margin-bottom: 16px; 
+    border-radius: 2rem;
+    margin-top: 8rem;   
+}
+
+.contact .row form{    
+    flex:1 1 45rem;
+    padding:5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background:var(--bg);
+    border:var(--border);
+}
+
+.contact .row form .inputBox span{
+    color:#fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:#fff;
+    text-transform: none;
+    background:none;
+}
+
+.footer {
+    font-family: var(--Body-Medium-Font);
+    font-size: var(--Body-Medium-Size);
+    line-height: var(--Body-Medium-Line-Height);
+    color: var(--main-color);  
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.contact-us, .working-hours {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-us {
+    align-items: flex-start;
+    width: 215px;    
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+    letter-spacing: -0.25px;    
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-and-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+}
+
+.logo {
+    height: 6rem; /* Ajuste conforme necessário */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.working-hours {
+    align-items: flex-start; 
+    width: 215px;    
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+    letter-spacing: -0.25px;     
+}
+
+.working-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.credit {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--main-color);
+    font-weight: 400;
+    letter-spacing: -0.25px;    
+    width: 100%; 
+    padding-top: 1.5rem;
+    margin-bottom: 10rem; 
+}
 
 
 
@@ -545,78 +787,131 @@ section{
     box-sizing: border-box; 
 }
         
-    .header .search-form{
+.header .search-form{
         width: 90%;
         right: 2rem;
     }
 
-    body{
-        margin: 0;
-        padding-top: 1rem;      
-    }
 
-    .home{
+.home{
         background-position: left;
         justify-content: center;
         text-align: center;
         
     }
 
-    .home .content h3{
+.home .content h3{
         font-size: 4.5rem;
     }
 
-    .home .content p{
+.home .content p{
         font-size: 1.5rem;
     }
 
-    .about{
+.about{
         align-items: flex-start;
         margin-top: -8rem;         
     }
 
-    .about .row {
+.about .row {
         flex-direction: column;
         padding: 0 1rem;
     }
 
-    .about .row .content {
+.about .row .content {
         padding: 2rem 1rem;
     }
 
-    .about .row .content .heading {
+.about .row .content .heading {
         font-size: 3rem;
     }
 
-    .about .row .content h3 {
+.about .row .content h3 {
         font-size: 2.5rem;
     }
 
-    .about .row .content p {
+.about .row .content p {
         font-size: 1.5rem;
     }
 
-    .about .row .content .horizontal-line {
+.about .row .content .horizontal-line {
         width: 100%;
     }
 
-    .about .row .content .button-container {
+.about .row .content .button-container {
         justify-content: center;
     }
 
-    .menu .horizontal-line {
+.menu .horizontal-line {
         width: 100%;
     } 
 
-    .menu{
+.menu{
         align-items: flex-start;
         margin-top: -15rem;         
     }
-    .menu .box-container .box{
+.menu .box-container .box{
         height:60rem;
 }
 
+.Products .horizontal-line {
+    width: 100%;
+}
 
+.review .horizontal-line {
+    width: 100%;
+}
+
+.contact .horizontal-line {
+    width: 100%;
+}
+
+.contact .row {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact .row .map, .contact .row form {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 1rem;
+}
+
+.footer-content {
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us, .working-hours {
+    width: 100%;
+    text-align: center;
+}
+
+.logo-and-social {
+    align-items: center;
+    padding: 5rem;      
+}
+
+
+.reservation .form-container {
+    grid-template-columns: 1fr; 
+}
+
+.reservation .form-row {    
+    width: 100%;
+    margin-bottom: 1rem; 
+}
+
+.reservation .btn.see-more {
+    margin: 4rem auto;
+}
+.credit {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+
+}
 
 
 
@@ -628,3 +923,4 @@ section{
     }
 
 }
+    

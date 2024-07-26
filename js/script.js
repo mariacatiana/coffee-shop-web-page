@@ -61,3 +61,17 @@ document.querySelector('#search-btn').addEventListener('click', function(event) 
 document.querySelector('#cart-btn').addEventListener('click', function(event) {
     event.stopPropagation(); 
 });
+
+const boxes = document.querySelectorAll('.box');
+
+        boxes.forEach(box => {
+            fetch('https://randomuser.me/api')
+                .then(response => response.json())
+                .then(data => {
+                    const userImage = data.results[0].picture.large;
+                    const userName = `${data.results[0].name.first} ${data.results[0].name.last}`;
+                    box.querySelector('.user').src = userImage;
+                    box.querySelector('.name').textContent = userName;
+                })
+                .catch(error => console.error('Error fetching user:', error));
+        });
