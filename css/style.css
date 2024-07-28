@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
 :root{
     --main-color: #B7743F;
     --action: #19B88B;
@@ -100,14 +102,15 @@ section{
     padding: 1rem;
 }  
 
-.header .navbar_1 md-tab,
-.header .navbar_2 md-tab{
+.header .navbar_1 a,
+.header .navbar_2 a{
     margin:0 1rem;
     padding: 2rem;
     font-size: 1.6rem;
     color: #fff;   
     text-decoration: none; 
     transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 .header .navbar_1 md-tab:hover,
@@ -399,25 +402,25 @@ section{
     width: fit-content;    
 }
 
-.Products {
+.products {
     margin-top: 10rem; 
 }
 
-.Products .horizontal-line {
+.products .horizontal-line {
     width: 400px; 
     height: 1px; 
     background-color: white; 
     margin: 0.5rem auto 2rem auto; 
 }
 
-.Products .box-container{
+.products .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:5rem;
     margin-top: 10rem;
 }
 
-.Products .box-container .box{
+.products .box-container .box{
     height:60rem;
     border-radius: 2rem;
     text-align: center;   
@@ -428,7 +431,7 @@ section{
     transition: var(--main-color);    
 }
 
-.Products .box-container .box img{
+.products .box-container .box img{
     padding: 2rem;;
     width: 100%;
     height: auto;
@@ -438,34 +441,34 @@ section{
     border-radius: 2rem;
 }
 
-.Products .box-container .box h3{
+.products .box-container .box h3{
     color: #fff;
     font-size: 2rem;
     padding:1rem 0;
 }
 
-.Products .box-container .box .price{
+.products .box-container .box .price{
     color: #fff;
     font-size: 2.5rem;
     padding:.5rem 0;
 }
 
-.Products .box-container .box .price span{
+.products .box-container .box .price span{
     font-size: 1.5rem;
     text-decoration: line-through;
     font-weight: lighter;
 }
 
-.Products .box-container .box .btn{
+.products .box-container .box .btn{
     color: white ;     
     background: var(--action);
 }
 
-.Products .box-container .box:hover .btn {
+.products .box-container .box:hover .btn {
     background: var(--main-color);    
 }
 
-.Products .btn.see-more {
+.products .btn.see-more {
     display: block;
     margin: 8rem auto;        
     width: fit-content;    
@@ -624,11 +627,7 @@ section{
     background:none;
 }
 
-.footer {
-    font-family: var(--Body-Medium-Font);
-    font-size: var(--Body-Medium-Size);
-    line-height: var(--Body-Medium-Line-Height);
-    color: var(--main-color);  
+.footer {         
     padding: 2rem 0;
     text-align: center;
 }
@@ -670,7 +669,7 @@ section{
 }
 
 .logo {
-    height: 6rem; /* Ajuste conforme necessário */
+    height: 6rem; 
 }
 
 .social-icons {
@@ -854,7 +853,7 @@ section{
         height:60rem;
 }
 
-.Products .horizontal-line {
+.products .horizontal-line {
     width: 100%;
 }
 
