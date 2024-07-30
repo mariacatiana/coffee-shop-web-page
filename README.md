@@ -34,7 +34,8 @@ The web page starts with a call-to-action section inviting users to join a club,
 - `GitHub`: A platform for hosting Git repositories, enabling collaboration and version management of the project.
 
 ## 👩🏻‍💻 Figma Prototype
-You can check out the initial prototype developed in Figma by following this link: [Figma Prototype](https://www.figma.com/proto/Zq2xJrf8Mqj4GGl8Wp8ffR/Cofee-Shop---FrauenLoop?node-id=8-1273&t=PCTiL5Xms0k6zAMg-1&scaling=scale-down&content-scaling=fixed&page-id=3%3A797)
+
+You can check out the initial prototype I built in Figma by following this link: [Figma Prototype](https://www.figma.com/proto/Zq2xJrf8Mqj4GGl8Wp8ffR/Cofee-Shop---FrauenLoop?node-id=8-1273&t=PCTiL5Xms0k6zAMg-1&scaling=scale-down&content-scaling=fixed&page-id=3%3A797)
 
 ## 👀 Project Overview
 
