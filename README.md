@@ -3,7 +3,7 @@
 
 # ☕️ Coffee Shop Web Page Project ☕️
 
-This project was created during the introductory cycle of the FrauenLoop Program: Introduction to Web Development and Computing. The goal was to design and develop a functional, responsive, and accessible web page for a fictional Coffee Shop, applying the skills learned during the course.
+This project was developed during the introductory cycle of the web development course in the FrauenLoop program. The goal was to apply the skills learned in the course to design and develop a functional, responsive, and accessible web page for a fictional coffee shop. It was my first experience building a complete web page.
 
 ## Table of Contents
 1. [Features and Behavior](#Features)
@@ -35,7 +35,7 @@ The web page starts with a call-to-action section inviting users to join a club,
 
 ## 👩🏻‍💻 Figma Prototype
 
-You can check out the initial prototype I built in Figma by following this link: [Figma Prototype](https://www.figma.com/proto/Zq2xJrf8Mqj4GGl8Wp8ffR/Cofee-Shop---FrauenLoop?node-id=8-1273&t=PCTiL5Xms0k6zAMg-1&scaling=scale-down&content-scaling=fixed&page-id=3%3A797)
+You can check out the initial prototype I quickly created in Figma. The primary focus was on web development rather than design details. Feel free to explore it by following this link: Figma Prototype.: [Figma Prototype](https://www.figma.com/proto/Zq2xJrf8Mqj4GGl8Wp8ffR/Cofee-Shop---FrauenLoop?node-id=8-1273&t=PCTiL5Xms0k6zAMg-1&scaling=scale-down&content-scaling=fixed&page-id=3%3A797)
 
 ## 👀 Project Overview
 
